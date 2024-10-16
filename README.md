@@ -132,5 +132,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Developer Notes
 
-* ...
-* ... 
+#### We have introduced several new components and files, using the styled-components library for styling: - 
+* weather.tsx - display the weather details based on the lat/lng
+* button.tsx - render the button
+* emptyState.tsx - show a placeholder or "zero state" ui when data is being loaded or not present in the server
+* molecules.tsx - this file contains the common styles in the form of styled components
+* modals.tsx - this is to store the common interfaces definitions 

@@ -8,13 +8,29 @@ import {
     Link,
     Route
 } from "react-router-dom";
+import { Box, Typography } from "./molecules";
+import styled from "styled-components";
 
+const PageLink = styled(Link)`
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    width: 369px;
+    height: 165px;
+    border-radius: 25px;
+    border: 1px solid #00000026;
+    margin-bottom: 24px;
+    align-items: center;
+    justify-content: center;
+`
 const Root = () => (
-    <div>
-        <Link to="/page-one">Page One</Link><br />
-        <Link to="/page-two">Page Two</Link><br />
-        <Link to="/page-three">Page Three</Link>
-    </div>
+    <Box flexDirection='column'
+        alignItems='center'
+        justifyContent='center' mt='24px'>
+        <PageLink to="/page-one"><Typography fontSize="36px" lineHeight="42.19px">Page One</Typography></PageLink>
+        <PageLink to="/page-two"><Typography fontSize="36px" lineHeight="42.19px">Page Two</Typography></PageLink>
+        <PageLink to="/page-three"><Typography fontSize="36px" lineHeight="42.19px">Page Three</Typography></PageLink>
+    </Box>
 );
 
 ReactDOM.render(
